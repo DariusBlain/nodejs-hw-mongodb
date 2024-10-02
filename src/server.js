@@ -23,7 +23,7 @@ export const startServer = () => {
 
   app.get('/', (req, res) => {
     res.json({
-      message: 'Node.js / HW1 / Serhii Syrov',
+      message: 'Node.js / HW-MongoDB / Serhii Syrov',
     });
   });
 
