@@ -14,21 +14,14 @@ export const getContactsController = async (req, res) => {
   const { page, perPage } = parsePaginationParams(req.query);
   const { sortBy, sortOrder } = parseSortParams(req.query);
   const filter = parseFilterParams(req.query);
-<<<<<<< HEAD
   const userId = req.user._id;
-=======
->>>>>>> 5f4c40db718fd124ac8893e9b723de0edaf502fb
-
   const contacts = await getAllContacts({
     page,
     perPage,
     sortBy,
     sortOrder,
     filter,
-<<<<<<< HEAD
     userId,
-=======
->>>>>>> 5f4c40db718fd124ac8893e9b723de0edaf502fb
   });
 
   res.json({
