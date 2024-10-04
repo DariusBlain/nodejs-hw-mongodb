@@ -51,13 +51,12 @@ export const getContactByIdController = async (req, res) => {
 export const createContactController = async (req, res) => {
   const { name, phoneNumber, email, isFavourite, contactType } = req.body;
   const userId = req.user._id;
-  console.log('console looooooog ', userId);
 
   const newContactData = {
     name,
     phoneNumber,
     contactType,
-    userId: userId,
+    userId,
   };
 
   if (email) {
@@ -80,7 +79,7 @@ export const createContactController = async (req, res) => {
 export const patchContactController = async (req, res, next) => {
   const { contactId } = req.params;
   const userId = req.user._id;
-  const result = await updateContact(contactId, req.body, { userId });
+  const result = await updateContact(contactId, req.body, userId);
 
   if (!result) {
     next(createHttpError(404, 'Contact not found'));
