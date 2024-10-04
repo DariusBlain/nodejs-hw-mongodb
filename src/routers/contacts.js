@@ -23,16 +23,24 @@ router.use('/:contactId', isValidId);
 
 router.get('/', ctrlWrapper(getContactsController));
 
+const router = Router();
+
+router.use('/contacts/:contactId', isValidId);
+
+router.get('/contacts', ctrlWrapper(getContactsController));
+
 router.get('/:contactId', ctrlWrapper(getContactByIdController));
 
 router.post(
   '/',
+  '/contacts',
   validateBody(createContactSchema),
   ctrlWrapper(createContactController),
 );
 
 router.patch(
   '/:contactId',
+  '/contacts/:contactId',
   validateBody(updateContactSchema),
   ctrlWrapper(patchContactController),
 );
