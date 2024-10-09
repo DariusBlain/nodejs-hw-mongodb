@@ -6,8 +6,11 @@ import router from './routers/index.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 import { notFoundHandler } from './middlewares/notFoundHandler.js';
 import cookieParser from 'cookie-parser';
+<<<<<<< HEAD
 import { UPLOAD_DIR } from './constants/index.js';
 
+=======
+>>>>>>> 6583df3f1d788496331679d22512feb477d0a6e9
 const PORT = Number(env('PORT', '3000'));
 
 export const startServer = () => {
