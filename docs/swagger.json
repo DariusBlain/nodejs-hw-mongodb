@@ -200,14 +200,6 @@
                   "contactType"
                 ],
                 "properties": {
-<<<<<<< HEAD
-=======
-                  "_id": {
-                    "description": "Contact's id",
-                    "type": "string",
-                    "example": "65e4decdd286b30065d54af9"
-                  },
->>>>>>> 0d2a30d13408e94248ac0225c9a2c4ade31485e5
                   "name": {
                     "description": "Contact's name",
                     "example": "John Doe"
@@ -236,14 +228,6 @@
                       "personal"
                     ]
                   },
-<<<<<<< HEAD
-=======
-                  "userId": {
-                    "description": "Contact's user id",
-                    "type": "string",
-                    "example": "65e4decdd286b30065d54af9"
-                  },
->>>>>>> 0d2a30d13408e94248ac0225c9a2c4ade31485e5
                   "photo": {
                     "description": "Link to contact's photo",
                     "type": "string",
@@ -384,7 +368,6 @@
                 "type": "object",
                 "properties": {
                   "name": {
-<<<<<<< HEAD
                     "description": "Contact's name",
                     "example": "John Doe"
                   },
@@ -414,24 +397,6 @@
                   },
                   "photo": {
                     "description": "Link to contact's photo",
-=======
-                    "type": "string",
-                    "description": "The name of the contact.",
-                    "example": "John Doe"
-                  },
-                  "email": {
-                    "type": "string",
-                    "description": "The contact's email address.",
-                    "example": "johndoe@example.com"
-                  },
-                  "phone": {
-                    "type": "string",
-                    "description": "The contact's phone number.",
-                    "example": 380000000003
-                  },
-                  "photo": {
-                    "description": "The contact's photo file.",
->>>>>>> 0d2a30d13408e94248ac0225c9a2c4ade31485e5
                     "type": "string",
                     "format": "binary",
                     "example": "https://res.cloudinary.com/uqwgdu/image/upload/image.png"
