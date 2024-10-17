@@ -20,19 +20,26 @@ requestBody:
         type: object
         properties:
           name:
+            description: "Contact's name"
+            example: 'John Doe'
+          phoneNumber:
+            description: "Contact's phone number"
             type: string
-            description: The name of the contact.
-            example: John Doe
-          email:
-            type: string
-            description: The contact's email address.
-            example: johndoe@example.com
-          phone:
-            type: string
-            description: The contact's phone number.
             example: +380000000003
+          email:
+            description: "Contact's email"
+            type: string
+            example: user@mail.com
+          isFavourite:
+            description: 'Favorite contact'
+            type: boolean
+            example: false
+          contactType:
+            description: "Contact's type"
+            type: string
+            enum: ['work', 'home', 'personal']
           photo:
-            description: The contact's photo file.
+            description: "Link to contact's photo"
             type: string
             format: binary
             example: https://res.cloudinary.com/uqwgdu/image/upload/image.png
